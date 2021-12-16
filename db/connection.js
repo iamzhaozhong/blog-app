@@ -8,8 +8,8 @@ mongoose
 	.connect(MONGODB_URI)
 	.catch((error) => console.error('Error connecting to MongoDB:', error.message))
 
-mongoose.connection.on('disconected', () => console.log('Disconnected from MongoDB!'))
+mongoose.connection.on('disconnected', () => console.log('Disconnected from MongoDB!'))
 
-mongoose.connection.on('error', (error) => console.error(`MongoDB connectino error: ${error}`))
+mongoose.connection.on('error', (error) => console.error(`MongoDB connection error: ${error}`))
 
 export default mongoose.connection
