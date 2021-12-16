@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-let MONGODB_URI = process.env.PROD_MONGODB || "URL"
+let MONGODB_URI = process.env.PROD_MONGODB || 3000
 
 mongoose.set('returnOriginal', false);
 
