@@ -7,7 +7,8 @@ function App() {
     <div className="App">
 
       <Routes>
-        <Route />
+        <Route
+          path="/" element={<p>This is the Home Screen</p>} />
       </Routes>
     </div>
   );
