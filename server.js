@@ -14,7 +14,11 @@ app.use(logger('dev'))
 
 app.use('/api', postsRoutes)
 
+app.get('/api', (req, res) => {
+  res.send("This is Groot!");
+});
+
 db.on('connected', () => {
-	console.log('Connected to MongoDB!')
-	app.listen(PORT, () => console.log(`Express server application is running on port ${PORT}`))
+  console.log('Connected to MongoDB!')
+  app.listen(PORT, () => console.log(`Express server application is running on port ${PORT}`))
 })
