@@ -10,8 +10,7 @@ function Posts() {
   useEffect(() => {
     const fetchPosts = async () => {
       const allPosts = await getPosts()
-      setBlogPosts(allPosts)
-      console.log(allPosts)
+      setBlogPosts(allPosts);
     }
     fetchPosts()
   }, [])
