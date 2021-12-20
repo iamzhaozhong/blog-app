@@ -3,8 +3,8 @@ import axios from "axios";
 let apiUrl;
 
 const apiUrls = {
-  production: "https://velvet-blog-app.herokuapp.com/api",
-  development: "http://localhost:3000/api",
+	production: 'https://velvet-blog-app.herokuapp.com/api',
+	development: 'https://velvet-blog-app.herokuapp.com/api',
 };
 
 if (window.location.hostname === "localhost") {
